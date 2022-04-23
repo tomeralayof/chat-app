@@ -1,0 +1,42 @@
+@local = http://localhost:5000
+
+POST  {{local}}/login
+Content-Type: application/json
+
+{
+  "name": "david shisi",
+  "email": "david@gmail.com",
+  "friends": [],
+  "isLogged": true,
+  "image" : "https://lh3.googleusercontent.com/a-/AOh14Gh1bRWO5popVRM8-DfA-nWmKnV-L0g_esKs3QWf=s96-c"
+}
+
+###
+GET {{local}}/getAuth
+Content-Type: application/json
+
+{
+  "name": "yarden mizrahi",
+  "email": "yarden@gmail.com",
+  "friends": [],
+  "isLogged": true,
+  "image" : "https://lh3.googleusercontent.com/a-/AOh14Gh1bRWO5popVRM8-DfA-nWmKnV-L0g_esKs3QWf=s96-c"
+}
+
+###
+POST {{local}}/addFriend/test
+Content-Type: application/json
+
+{
+  "_id": "62643a03e51472dbbeb7f00b",
+  "email": "shiraz@gmail.com"
+}
+
+
+###
+GET {{local}}/addFriend/friends
+Content-Type: application/json
+
+{
+  "email": "tomeralayof95959@gmail.com"
+}
